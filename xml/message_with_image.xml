@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0">
+  <DisplayForm>
+    <Script>
+      <![CDATA[
+        <UiScreen infoLevel="Normal">
+          <Title>Finalizing</Title>
+          <IoScreen>
+            <IoObject>
+              <Title>Sending email(s)</Title>
+              <Description>Sending email(s)</Description>
+              <Message imgsrc="./img/email.jpg">E-mail(s) are send to EMAILS.</Message>
+            </IoObject>
+          </IoScreen>
+        </UiScreen>
+      ]]>
+    </Script>
+  </DisplayForm>
+</SerioCommands>

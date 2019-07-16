@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> <SerioCommands version="1.0">
+<DisplayForm> <Script>
+    <![CDATA[
+    <UiScreen infoLevel="Normal">
+        <Title>>RFID Card reader</Title>
+        <Operations>
+            <Op type="Submit" action="./show_rfidnr">
+                <Label>Submit</Label>
+            </Op>
+            <Op type="Back" action="./">
+                <Label>Back</Label>
+            </Op>
+        </Operations>
+        <IoScreen>
+            <IoObject>
+            <Title>RFID card reader </Title>
+                <IdScanner id="RfidCardInput">
+                    <Label>Please put RFID Card on the card reader.</Label>
+                </IdScanner>
+            </IoObject>
+        </IoScreen>
+    </UiScreen>
+]]> </Script>
+</DisplayForm> </SerioCommands>

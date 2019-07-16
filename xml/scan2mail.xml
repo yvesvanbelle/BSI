@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?> <SerioCommands version="1.0">
+    <IoScanAndSend>
+        <TxProfiles>
+            <Smtp> <Destination>email_address</Destination>
+           </Smtp>
+        </TxProfiles>
+        <ScanTray>ADF</ScanTray>
+        <ColorMode>Color</ColorMode>
+        <Resolution>Normal</Resolution>
+        <FileType>PDF</FileType>
+        <JobFinAckUrl>./</JobFinAckUrl>
+    </IoScanAndSend>
+    <DisplayInfo>
+        <Script>
+        <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+            <UiScreen>
+                <IoScreen>
+                    <IoObject>
+                        <Title>Scan 2 email</Title>
+                        <Message>Scanning</Message>
+                    </IoObject>
+              </IoScreen>
+            </UiScreen>
+        ]]>
+        </Script>
+    </DisplayInfo>
+</SerioCommands>

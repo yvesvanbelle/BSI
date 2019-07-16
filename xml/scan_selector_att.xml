@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0">
+   <IoScanAndSend>
+      <TxProfiles>
+         <Ftp>
+            <FtpParams>
+               <FileName>BrotherBSI</FileName>
+               <Host>ftpserver_ip</Host>
+               <User>user</User>
+               <Password>12345</Password>
+               <StoreDir>./</StoreDir>
+               <PassiveMode>true</PassiveMode>
+               <PortNum>2121</PortNum>
+            </FtpParams>
+         </Ftp>
+      </TxProfiles>
+
+      <!-- <ScanTray>FB</ScanTray> -->
+      <ColorMode>Gray</ColorMode>
+      <Resolution>Low</Resolution>
+      <!-- <FileType>JPEG</FileType> -->
+      <FileType>PDF</FileType>
+
+      <JobFinAckUrl>./selectoraction2</JobFinAckUrl>
+   </IoScanAndSend>
+   <DisplayInfo>
+      <Script>
+         <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+         <UiScreen infoLevel="Normal">
+            <IoScreen>
+               <IoObject>
+                  <Title>scan2FTP</Title>
+                  <Description>Executing Scan2FTP</Description>
+                  <Message>Scanning documents to email</Message>
+               </IoObject>
+            </IoScreen>
+         </UiScreen>
+         ]]>
+      </Script>
+   </DisplayInfo>
+</SerioCommands>

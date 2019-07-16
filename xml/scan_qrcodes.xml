@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0">
+   <IoScanAndSend>
+      <TxProfiles>
+         <Ftp>
+            <FtpParams>
+               <FileName>barcodepage</FileName>
+               <Host>ftpserver_ip</Host>
+               <User>user</User>
+               <Password>12345</Password>
+               <StoreDir>./</StoreDir>
+               <PassiveMode>true</PassiveMode>
+               <PortNum>2121</PortNum>
+            </FtpParams>
+         </Ftp>
+      </TxProfiles>
+
+      <!-- <ScanTray>FB</ScanTray> -->
+      <ColorMode>Color</ColorMode>
+      <Resolution>Normal</Resolution>
+      <!-- <FileType>JPEG</FileType> -->
+      <FileType>JPEG</FileType>
+
+      <JobFinAckUrl>./qrimages2pdfs</JobFinAckUrl>
+   </IoScanAndSend>
+   <DisplayInfo>
+      <Script>
+         <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+         <UiScreen infoLevel="Normal">
+            <IoScreen>
+               <IoObject>
+                  <Title>Scan2FTP</Title>
+                  <Description>Scanning QR codes</Description>
+                  <Message>Scanning QR codes</Message>
+               </IoObject>
+            </IoScreen>
+         </UiScreen>
+         ]]>
+      </Script>
+   </DisplayInfo>
+</SerioCommands>

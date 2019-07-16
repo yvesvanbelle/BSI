@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SerioCommands version="1.0">
+ <DisplayForm>
+  <Script>
+   <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+    <UiScreen>
+
+     <Operations>
+      <Op type="Submit" action="./selectoraction" ></Op>
+
+      <Op type="Back" action="./" ></Op>
+
+     </Operations>
+     <IoScreen>
+      <IoObject>
+       <Title>Select email address</Title>
+       <Selection id="selectid email" multiple="true">
+
+        <Item selected="false" value="info@brother.be">
+         <Label>info@brother.be</Label>
+        </Item>
+
+        <Item selected="false" value="sales@brother.be">
+         <Label>sales@brother.be</Label>
+        </Item>
+
+        <Item selected="false" value="order@brother.be">
+         <Label>order@brother.be</Label>
+        </Item>
+
+        <Item selected="true" value="support@brother.be">
+         <Label>support@brother.be</Label>
+        </Item>
+
+        <Item selected="false" value="repair@brother.be">
+         <Label>repair@brother.be</Label>
+        </Item>
+
+       </Selection>
+      </IoObject>
+     </IoScreen>
+    </UiScreen>
+   ]]>
+  </Script>
+ </DisplayForm>
+</SerioCommands>

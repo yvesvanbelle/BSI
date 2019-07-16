@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SerioCommands version="1.1">
+     <DisplayForm>
+         <Script>
+             <![CDATA[
+                 <UiScreen>
+                     <Title>Select function</Title>
+                     <LinkScreen>
+                         <LinkControl>
+                             <LinkItem href="./orderscan">
+                                 <Label imgsrc="./img/scan.jpg">Order Scan</Label>
+                             </LinkItem>
+                             <LinkItem href="./scan2cifs">
+                                 <Label imgsrc="./img/networksrv.jpg">Scan 2 CIFS</Label>
+                             </LinkItem>
+                             <LinkItem href="./scan2mail">
+                                 <Label imgsrc="./img/email.jpg">Scan 2 mail</Label>
+                             </LinkItem>
+                             <LinkItem href="./scan2ocr">
+                                 <Label imgsrc="./img/ocr.jpg">Scan 2 OCR PDF</Label>
+                             </LinkItem>
+                             <LinkItem href="./scan_qrcodes">
+                                 <Label imgsrc="./img/qrcode.jpg">Scan barcode</Label>
+                             </LinkItem>
+                             <LinkItem href="./read_rfid">
+                                 <Label imgsrc="./img/badge.jpg">Read RFID</Label>
+                             </LinkItem>
+                             <LinkItem href="./selector">
+                                 <Label imgsrc="./img/brother.jpg">Multiple emails</Label>
+                             </LinkItem>
+                         </LinkControl>
+                     </LinkScreen>
+                 </UiScreen>
+             ]]>
+         </Script>
+     </DisplayForm>
+</SerioCommands>

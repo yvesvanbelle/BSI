@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0" >
+    <DisplayForm>
+        <Script>
+<![CDATA[
+<UiScreen>
+    <Title>Enter Order Number</Title>
+    <Operations>
+        <Op type="Submit" action="./scan2ftp">
+            <Label>Submit</Label>
+        </Op>
+        <Op type="Back" action="./">
+            <Label>Back</Label>
+        </Op>
+    </Operations>
+    <IoScreen>
+        <IoObject>
+               <Title>Enter Order number</Title>
+               <Description>Enter Order Number</Description>
+            <TextArea id="ordernr">
+                <InitValue></InitValue>
+                <LetterTypes>
+                    <LetterType>Numeric</LetterType>
+                    <!-- <LetterType>LowerCase</LetterType> -->
+                    <!-- <LetterType>UpperCase</LetterType> -->
+                    <!-- <LetterType>Glyph</LetterType> -->
+                </LetterTypes>
+               </TextArea>
+        </IoObject>
+    </IoScreen>
+</UiScreen>
+]]>
+      </Script>
+   </DisplayForm>
+</SerioCommands>

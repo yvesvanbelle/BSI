@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0">
+   <IoScanAndSend>
+      <TxProfiles>
+         <Ftp>
+            <FtpParams>
+               <FileName>page</FileName>
+               <Host>ftpipaddress</Host>
+               <User>user</User>
+               <Password>12345</Password>
+               <StoreDir>./</StoreDir>
+               <PassiveMode>true</PassiveMode>
+               <PortNum>2121</PortNum>
+            </FtpParams>
+         </Ftp>
+      </TxProfiles>
+
+      <!-- <ScanTray>FB</ScanTray> -->
+      <ColorMode>Color</ColorMode>
+      <Resolution>High</Resolution>
+      <!-- <FileType>JPEG</FileType> -->
+      <FileType>JPEG</FileType>
+
+      <JobFinAckUrl>./ocr_and_pdf</JobFinAckUrl>
+   </IoScanAndSend>
+   <DisplayInfo>
+      <Script>
+         <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+         <UiScreen infoLevel="Normal">
+            <IoScreen>
+               <IoObject>
+                  <Title>Scan 2 FTP</Title>
+                  <Description>Scanning</Description>
+                  <Message>Scanning </Message>
+               </IoObject>
+            </IoScreen>
+         </UiScreen>
+         ]]>
+      </Script>
+   </DisplayInfo>
+</SerioCommands>

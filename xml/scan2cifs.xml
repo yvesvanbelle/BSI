@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SerioCommands version="1.0">
+   <IoScanAndSend>
+      <TxProfiles>
+         <Cifs>
+            <CifsParams>
+               <Host>cifsserver_ip</Host>
+               <StoreDir>cifsserver_share</StoreDir>
+               <FileName>CIFS-SMB_Scan</FileName>
+               <AuthMethod>NTLMv2</AuthMethod>
+               <User>cifsuser_loging</User>
+               <Password>cifsuser_passwd</Password>
+               <!-- <KerberosServer>KerberosSrv</KerberosServer> -->
+            </CifsParams>
+         </Cifs>
+      </TxProfiles>
+
+      <!-- <ScanTray>FB</ScanTray> -->
+      <ColorMode>Color</ColorMode>
+      <Resolution>Low</Resolution>
+      <FileType>PDF</FileType>
+
+          <DuplexScanEnable>true</DuplexScanEnable>
+          <ShortEdgeBinding>true</ShortEdgeBinding>
+
+      <JobFinAckUrl>./</JobFinAckUrl>
+   </IoScanAndSend>
+   <DisplayInfo>
+      <Script>
+         <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+         <UiScreen infoLevel="Normal">
+            <IoScreen>
+               <IoObject>
+                  <Title>Scan 2 CIFS</Title>
+                  <Description>Scanning</Description>
+                  <Message>Scanning</Message>
+               </IoObject>
+            </IoScreen>
+         </UiScreen>
+         ]]>
+      </Script>
+   </DisplayInfo>
+</SerioCommands>
